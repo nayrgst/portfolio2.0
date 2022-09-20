@@ -1,0 +1,6 @@
+export const rosa: string = '#e53170'
+export const laranja: string = '#ff8906'
+export const branco: string = '#fffffe'
+export const preto: string = 'black'
+export const pretoClaro: string = '#16161a'
+export const cinza: string = '#a7a9be'

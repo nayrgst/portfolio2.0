@@ -1,4 +1,5 @@
 export const rosa: string = '#e53170'
+export const laranjaEscuro: string = '#f25f4c'
 export const laranja: string = '#ff8906'
 export const branco: string = '#fffffe'
 export const preto: string = 'black'

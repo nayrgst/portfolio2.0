@@ -1,28 +1,45 @@
 import styled from "styled-components";
-import { rosa, laranja, branco, preto } from '../../utils/Colors'
+import { branco, rosa} from "../../utils/Colors";
 
-
-export const Btn = styled.button`
-  background-color: ${rosa};
-  font-family: 'Architects Around Bird';
-  border: 1px solid ${preto};
-  margin: 5px;
-  transition: background 500ms;
-  font-size: 18px;
-  border-radius: 20px 30px;
-  padding: 15px 15px;
+export const All = styled.div`
+  padding: 0;
   text-decoration: none;
-  color: ${branco};
-  box-shadow: 5px 0px 0px ${preto};
-  &:hover,
-  &:focus {
-    background-color: ${laranja};
-    border: 1px solid ${preto};
-  }
-  &:active {
-    color: ${laranja};
-    background-color: ${preto};
-    box-shadow: 5px 0px 0px ${branco};
-    border: 1px solid ${branco};
-  }
   `
+
+  export const Btn = styled.button`
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    font-family: 'Titillium Web', sans-serif;
+    background: ${branco};
+    border: 0px;
+    border-radius: 80px 80px 80px;
+    text-transform: capitalize;
+    position: relative;
+    transition: 0.5s;
+    margin: 0.5em;
+    &:before, :after {
+      content: '';
+      position: absolute;
+      width: 0.7em;
+      height: 0.7em;
+      border-radius: 50%;
+      transition: 0.5s cubic-bezier(0.5, -0.6, 0.25, 1.5);
+      top: calc(50% - 0.8em / 2);
+    }
+    &:before { left: 0; z-index: -1;}
+    &:after {right: 0; z-index: -2;}
+    &:hover { color: ${branco}}
+    &:hover::before,
+    &:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 80px 80px 80px;
+    background-color: ${rosa}}
+    &:hover,:before { top: 0 }
+    &:hover,:after {
+      right: -0.5em;
+      filter: brightness(0.8);
+    }`

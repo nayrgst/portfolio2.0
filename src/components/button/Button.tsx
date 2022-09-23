@@ -1,10 +1,12 @@
 import React from 'react';
-import { Btn } from './ButtonStyled'
+import { Btn, All} from './ButtonStyled'
 import PropTypes from 'prop-types'
 
 function Button(props: { name: string; }) {
   return (
-    <Btn>{props.name}</Btn>
+    <All>
+      <Btn>{props.name}</Btn>
+    </All>
 )
 }
 

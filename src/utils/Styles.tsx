@@ -40,7 +40,7 @@ export const styles = {
     'margin-top': '20vh',
   },
   bmItem: {
-    display: 'inline-block'
+    display: 'flex'
   },
   bmOverlay: {
     background: 'rgba(0, 0, 0, 0.3)'

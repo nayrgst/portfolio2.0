@@ -14,7 +14,7 @@ function Home() {
       </LeftDiv>
       <RightDiv>
           <Name>
-            <h1>PEDRO RYAN</h1>
+            Pedro Ryan.
           </Name>
           <Title>
               <h2>Desenvolverdor Front-End!</h2> 

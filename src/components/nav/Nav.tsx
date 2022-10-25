@@ -34,10 +34,6 @@ class Nav extends React.Component {
           <Link to='/skills'>
             <Button name='Habilidades' props={String} />
           </Link>
-          
-          <Link to='/leisure'>
-            <Button name='Lazer' props={String} />
-          </Link>
 
           <Div>
             <Btn>

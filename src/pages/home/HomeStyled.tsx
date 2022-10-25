@@ -35,6 +35,15 @@ to {
   transform: translate(0%);
 };`
 
+export const flic = keyframes`
+  0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+`
+
 export const PrincipalDiv = styled.div`
   @media ${device.mobileS || device.mobileM || device.mobileL} {
     display: flex;
@@ -236,7 +245,7 @@ export const RightDiv = styled.div`
     margin: 0;
   }`
 
-export const Name = styled.h1`
+export const Name = styled.span`
   @media ${device.mobileS || device.mobileM || device.mobileL} {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
@@ -245,7 +254,14 @@ export const Name = styled.h1`
     color: ${branco};
     margin: 0px;
     width: 15rem;
-    font-size: 0.6rem;
+    font-size: 10vw;
+    padding: 7px;
+    display: inline;
+    ::after {
+      content: '|';
+      margin-left: 5px;
+      animation: ${flic} .8s infinite
+    }
   }
 
   @media ${device.tablet} {
@@ -256,7 +272,9 @@ export const Name = styled.h1`
     color: ${branco};
     margin: 0px;
     width: 15rem;
-    font-size: 0.8rem;
+    font-size: 2em;
+    padding: 7px;
+    display: inline;
   }
 
   @media ${device.laptop || device.laptopL} {
@@ -267,8 +285,10 @@ export const Name = styled.h1`
     color: ${branco};
     margin: 0px;
     width: 360px;
-    font-size: 1rem;
+    font-size: 3rem;
     text-align: center;
+    padding: 7px;
+    display: inline;
   }
   
   @media ${device.desktop || device.desktopL} {
@@ -279,8 +299,10 @@ export const Name = styled.h1`
     border-radius: 30px 30px 0px 0px;
     color: ${branco};
     width: 25rem;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     text-align: center;
+    padding: 7px;
+    display: inline;
   }`
 
 export const Title = styled.h2`

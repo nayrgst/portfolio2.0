@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components"
-import { branco, laranja, pretoClaro, rosa, preto } from "../../utils/Colors"
 import { device } from "../../utils/Breakpoints"
+import { branco, laranja, preto, pretoClaro, rosa } from "../../utils/Colors"
 
 export const transition = keyframes`
 0% {
@@ -59,14 +59,13 @@ export const PrincipalDiv = styled.div`
     background-color: ${pretoClaro};
     flex-direction: column;
     width: 100%;
-    height: 40rem;
+    height: 50rem;
   }
 
   @media ${device.laptop} { 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
     background-color: ${pretoClaro};
     height: 85vh;
     flex-wrap: wrap;
@@ -80,9 +79,8 @@ export const PrincipalDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
     background-color: ${pretoClaro};
-    height: 46rem;
+    height: 70rem;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
@@ -90,13 +88,11 @@ export const PrincipalDiv = styled.div`
   }
 
   @media ${device.desktop || device.desktopL} {
-    max-width: 1655px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
     background-color: ${pretoClaro};
-    height: 75rem;
+    height: 60rem;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
@@ -132,6 +128,7 @@ export const Profile = styled.img`
     margin-left: 30px;
     margin: 0px;
     height: 370px;
+    width: 370px;
   }
 
   @media ${device.laptopL} {
@@ -140,7 +137,8 @@ export const Profile = styled.img`
     padding: 6px;
     margin-left: 30px;
     margin: 0px;
-    height: 50vh;
+    height: 35vh;
+    width: 35vh;
   }
 
   @media ${device.desktop || device.desktopL} {
@@ -222,7 +220,7 @@ export const RightDiv = styled.div`
     height: 500px;
     width: 450px;
     animation: ${transition} 2s;
-    margin-top: 0em;
+    margin-top: 0;
     align-items: center;
   }
 
@@ -245,7 +243,7 @@ export const RightDiv = styled.div`
     margin: 0;
   }`
 
-export const Name = styled.span`
+export const Name = styled.p`
   @media ${device.mobileS || device.mobileM || device.mobileL} {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
@@ -257,11 +255,6 @@ export const Name = styled.span`
     font-size: 10vw;
     padding: 7px;
     display: inline;
-    ::after {
-      content: '|';
-      margin-left: 5px;
-      animation: ${flic} .8s infinite
-    }
   }
 
   @media ${device.tablet} {
@@ -284,7 +277,7 @@ export const Name = styled.span`
     border-radius: 30px 30px 0px 0px;
     color: ${branco};
     margin: 0px;
-    width: 360px;
+    width: 380px;
     font-size: 3rem;
     text-align: center;
     padding: 7px;
@@ -301,7 +294,7 @@ export const Name = styled.span`
     width: 25rem;
     font-size: 3.5rem;
     text-align: center;
-    padding: 7px;
+    padding: 15px;
     display: inline;
   }`
 

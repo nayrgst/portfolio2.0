@@ -1,11 +1,10 @@
-/* eslint-disable jsx-a11y/alt-text */
 import * as React from 'react';
-import Button from '../button/Button';
+import { pushRotate as Menu, State } from 'react-burger-menu';
+import { TiThMenu } from 'react-icons/ti';
 import { Link } from 'react-router-dom';
-import {pushRotate as Menu, State} from 'react-burger-menu'
-import { TiThMenu } from 'react-icons/ti'
-import { styles } from '../../utils/Styles'
-import { A, Btn, Div, Svg, Svg2 } from './NavStyled'
+import { styles } from '../../utils/Styles';
+import Button from '../button/Button';
+import { A, Btn, Div, Svg, Svg2 } from './NavStyled';
 
 class Nav extends React.Component {
   showSettings(event: {preventDefault(): void;}) {
@@ -23,6 +22,10 @@ class Nav extends React.Component {
         outerContainerId='container'
         styles={styles}
       >
+          <Link to='/'>
+            <Button name='Home' props={String}/>
+          </Link>
+
           <Link to='/about'>
             <Button name='Sobre mim' props={String} />
           </Link>

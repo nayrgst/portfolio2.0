@@ -1,15 +1,13 @@
-import React from 'react';
-import Button from '../../components/button/Button';
-import { Link } from 'react-router-dom';
+import Header from '../../components/header/Header';
 
 function Projects() {
   return (
-    <h1>
-      projects
-      <Link to='/'>
-        <Button name='Home' props={String}/>
-      </Link>
-    </h1>
+    <>
+      <Header />
+        <h1>
+          projects
+        </h1>
+    </>
   )
 }
 

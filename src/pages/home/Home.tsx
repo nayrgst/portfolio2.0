@@ -1,8 +1,8 @@
-import React from 'react';
-import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
-import profile from '../../imagens/profile.jpg'
-import {Title, Name, RightDiv, PrincipalDiv, Profile, LeftDiv, Resume} from './HomeStyled'
+import Header from '../../components/header/Header';
+import TypeString from '../../components/typeWriter/typeWriter';
+import profile from '../../imagens/profile.jpg';
+import { LeftDiv, Name, PrincipalDiv, Profile, Resume, RightDiv, Title } from './HomeStyled';
 
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
       </LeftDiv>
       <RightDiv>
           <Name>
-            Pedro Ryan.
+          <TypeString text='Pedro Ryan'/>
           </Name>
           <Title>
               <h2>Desenvolverdor Front-End!</h2> 
@@ -23,7 +23,8 @@ function Home() {
             Olá, sou Pedro Ryan tenho 20 anos,<br /> nasci em 
             <strong> Brasília - DF</strong>, e hoje moro em <br /><strong>Águas Lindas - GO </strong>
             junto com meus pais e meu irmão. Sou apaixonado por tecnologia desde
-            que me entendo por gente, agora estou do meu primeiro emprego como desenvolvedor <strong>Front-End</strong>
+            que me entendo por gente, agora estou do meu primeiro emprego como desenvolvedor <br/>
+            <strong>Front-End</strong>
           </Resume>
        </RightDiv> 
       </PrincipalDiv>

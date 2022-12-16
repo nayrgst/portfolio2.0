@@ -1,7 +1,6 @@
-import React from 'react';
-import{ Routes, Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
 import About from './pages/about/About';
-import Home from './pages/home/Home'
+import Home from './pages/home/Home';
 import Projects from './pages/project/Projects';
 import Skills from './pages/skills/Skills';
 

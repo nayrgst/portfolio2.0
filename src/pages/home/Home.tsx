@@ -20,7 +20,7 @@ function Home() {
               <h2>Desenvolverdor Front-End!</h2> 
           </Title>
           <Resume>
-            Olá, sou Pedro Ryan tenho 20 anos,<br /> nasci em 
+            Olá, sou Pedro Ryan tenho 21 anos,<br /> nasci em 
             <strong> Brasília - DF</strong>, e hoje moro em <br /><strong>Águas Lindas - GO </strong>
             junto com meus pais e meu irmão. Sou apaixonado por tecnologia desde
             que me entendo por gente, agora estou à procura do meu primeiro emprego como desenvolvedor <br/>

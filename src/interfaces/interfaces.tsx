@@ -56,6 +56,14 @@ export interface Props {
     width?: number | string | undefined;
 }
 
+export interface AgeProps {
+    birthday: string
+}
+
+export interface Props {
+    birthdate: string
+}
+
 export class ReactBurgerMenu extends React.Component<Props> {}
 
 export class slide extends ReactBurgerMenu {}

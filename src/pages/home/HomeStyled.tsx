@@ -67,7 +67,8 @@ export const PrincipalDiv = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${pretoClaro};
-    height: 85vh;
+    height: 95vh;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
@@ -80,7 +81,7 @@ export const PrincipalDiv = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${pretoClaro};
-    height: 70rem;
+    height: 50rem;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
@@ -92,7 +93,7 @@ export const PrincipalDiv = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${pretoClaro};
-    height: 60rem;
+    height: 70rem;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
@@ -137,8 +138,8 @@ export const Profile = styled.img`
     padding: 6px;
     margin-left: 30px;
     margin: 0px;
-    height: 35vh;
-    width: 35vh;
+    height: 45vh;
+    width: 45vh;
   }
 
   @media ${device.desktop || device.desktopL} {
@@ -146,8 +147,8 @@ export const Profile = styled.img`
     background-color: ${laranja};
     padding: 6px;
     margin: 0;
-    height: 30rem;
-    width: 30rem;
+    height: 50vh;
+    width: 50vh;
   }`
 
   export const LeftDiv = styled.div`
@@ -183,7 +184,8 @@ export const Profile = styled.img`
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 550px;
+    width: 30vh;
+    height: 50vh;
     animation: ${goBack} 2s;
   }`
 
@@ -236,8 +238,8 @@ export const RightDiv = styled.div`
   @media ${device.desktop || device.desktopL} {
     display: flex;
     flex-direction: column;
-    height: 70rem;
-    width: 70rem;
+    height: 50vh;
+    width: 50vh;
     animation: ${transition} 2s;
     align-items: center;
     margin: 0;
@@ -245,7 +247,7 @@ export const RightDiv = styled.div`
 
 export const Name = styled.p`
   @media ${device.mobileS || device.mobileM || device.mobileL} {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     text-align: center;
     background-color: ${laranja};
     border-radius: 30px 30px 0px 0px;
@@ -258,20 +260,19 @@ export const Name = styled.p`
   }
 
   @media ${device.tablet} {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif, bold;
     text-align: center;
     background-color: ${laranja};
     border-radius: 30px 30px 0px 0px;
     color: ${branco};
     margin: 0px;
-    width: 15rem;
     font-size: 2em;
     padding: 7px;
     display: inline;
   }
 
   @media ${device.laptop || device.laptopL} {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     text-align: center;
     background-color: ${laranja};
     border-radius: 30px 30px 0px 0px;
@@ -285,7 +286,7 @@ export const Name = styled.p`
   }
   
   @media ${device.desktop || device.desktopL} {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 13px;
     text-align: center;
     background-color: ${laranja};
@@ -300,7 +301,7 @@ export const Name = styled.p`
 
 export const Title = styled.h2`
   @media ${device.mobileS || device.mobileM || device.mobileL} {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     width: 19rem;
     background-color: ${rosa};
     color: ${branco};
@@ -312,7 +313,7 @@ export const Title = styled.h2`
   }
 
   @media ${device.tablet} {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     width: 22rem;
     background-color: ${rosa};
     color: ${branco};
@@ -324,7 +325,7 @@ export const Title = styled.h2`
   }
 
   @media ${device.laptop || device.laptopL} {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     width: 100%;
     background-color: ${rosa};
     color: ${branco};
@@ -336,7 +337,7 @@ export const Title = styled.h2`
   }
   
   @media ${device.desktop || device.desktopL} {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     width: 40rem;
     background-color: ${rosa};
     color: ${branco};
@@ -404,9 +405,9 @@ export const Resume = styled.div`
     font-style: italic;
     text-align: center;
     color: ${preto};
-    font-size: 2rem;
-    width: 40rem;
-    height: 15rem;
+    font-size: 3rem;
+    width: 70vh;
+    height: 40vh;
   }`
 
 

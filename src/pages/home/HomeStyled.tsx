@@ -3,46 +3,46 @@ import { device } from "../../utils/Breakpoints"
 import { branco, laranja, preto, pretoClaro, rosa } from "../../utils/Colors"
 
 export const transition = keyframes`
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
-from {
-  transform: translateZ(-300px);
-};
-to {
-  transform: translateZ(0%);
-};
-`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  from {
+    transform: translateZ(-300px);
+  }
+  to {
+    transform: translateZ(0%);
+  }
+`;
 
 export const goBack = keyframes`
-0% {
-  opacity: 0;
-}
-50% {
-  opacity: 0.9;
-}
-100% {
-  opacity: 2;
-}
-from {
-  transform: translate(-300px);
-};
-
-to {
-  transform: translate(0%);
-};`
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 2;
+  }
+  from {
+    transform: translate(-300px);
+  }
+  to {
+    transform: translate(0%);
+  }
+`;
 
 export const flic = keyframes`
   0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-`
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+`;
 
 export const PrincipalDiv = styled.div`
   @media ${device.mobileS || device.mobileM || device.mobileL} {
@@ -147,6 +147,8 @@ export const Profile = styled.img`
     background-color: ${laranja};
     padding: 6px;
     margin: 0;
+    margin-left: 15vh;
+    margin-top: 28vh;
     height: 50vh;
     width: 50vh;
   }`
@@ -184,8 +186,8 @@ export const Profile = styled.img`
     display: flex;
     flex-direction: column;
     margin: 0;
-    width: 30vh;
-    height: 50vh;
+    width: 100vh;
+    height: 200vh;
     animation: ${goBack} 2s;
   }`
 
@@ -238,11 +240,9 @@ export const RightDiv = styled.div`
   @media ${device.desktop || device.desktopL} {
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    width: 50vh;
-    animation: ${transition} 2s;
-    align-items: center;
     margin: 0;
+    width: 100vh;
+    height: 200vh;
   }`
 
 export const Name = styled.p`
@@ -344,7 +344,7 @@ export const Title = styled.h2`
     border-radius: 20px 20px 20px 20px;
     margin: 0px;
     margin-left: 0px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }`
 
@@ -405,9 +405,9 @@ export const Resume = styled.div`
     font-style: italic;
     text-align: center;
     color: ${preto};
-    font-size: 3rem;
+    font-size: 2rem;
     width: 70vh;
-    height: 40vh;
+    height: 30vh;
   }`
 
 

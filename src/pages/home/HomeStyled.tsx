@@ -1,6 +1,6 @@
-import styled, { keyframes } from "styled-components"
-import { device } from "../../utils/Breakpoints"
-import { branco, laranja, preto, pretoClaro, rosa } from "../../utils/Colors"
+import styled, { keyframes } from "styled-components";
+import { device } from "../../utils/Breakpoints";
+import { branco, laranja, preto, pretoClaro, rosa } from "../../utils/Colors";
 
 export const transition = keyframes`
   0% {
@@ -149,8 +149,8 @@ export const Profile = styled.img`
     margin: 0;
     margin-left: 15vh;
     margin-top: 28vh;
-    height: 50vh;
-    width: 50vh;
+    height: 60vh;
+    width: 60vh;
   }`
 
   export const LeftDiv = styled.div`

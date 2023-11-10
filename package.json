@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": "20.x"
+    "node": "20.9.0"
   },
   "dependencies": {
     "@jest/types": "^29.6.3",

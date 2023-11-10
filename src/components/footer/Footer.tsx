@@ -1,4 +1,3 @@
-import React from 'react';
 import { FooterTagP, FooterT } from './FooterStyled';
 
 function Footer() {

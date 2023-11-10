@@ -1,4 +1,3 @@
-import React from 'react';
 import { Btn, All} from './ButtonStyled'
 import PropTypes from 'prop-types'
 

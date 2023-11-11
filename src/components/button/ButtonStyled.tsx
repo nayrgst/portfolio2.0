@@ -24,9 +24,9 @@ export const All = styled.div`
       content: '';
       position: absolute;
       width: 0.7em;
-      height: 0.7em;
+      height: 1em;
       border-radius: 50%;
-      transition: 0.5s cubic-bezier(0.5, -0.6, 0.25, 1.5);
+      transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
       top: calc(50% - 0.8em / 2);
     }
     &:before { left: 0; z-index: -1;}
@@ -40,6 +40,7 @@ export const All = styled.div`
     background-color: ${rosa}}
     &:hover,:before { top: 0 }
     &:hover,:after {
-      right: -0.5em;
+      padding: 10px;
+      right: 0.5em;
       filter: brightness(0.8);
     }`

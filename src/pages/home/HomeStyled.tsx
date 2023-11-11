@@ -387,6 +387,7 @@ export const Resume = styled.div`
     color: ${preto};
     margin-top: 20px;
     font-size: 1.5rem;
+    margin: 10px;
   }
 
   @media ${ device.laptopL} {
@@ -397,7 +398,7 @@ export const Resume = styled.div`
     color: ${preto};
     margin-top: 20px;
     font-size: 1.5rem;
-    width: 40rem;
+    width: 30rem;
   }
   
   @media ${device.desktop || device.desktopL} {

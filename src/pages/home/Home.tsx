@@ -19,7 +19,7 @@ function Home() {
           <TypeString text='Pedro Ryan'/>
           </Name>
           <Title>
-              <h2>Desenvolverdor Front-End!</h2> 
+              <h2>Desenvolverdor Web!</h2> 
           </Title>
           <Resume>
             Olá, sou Pedro Ryan tenho <Age birthdate='2001-10-11'/> anos,<br /> nasci em 

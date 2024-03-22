@@ -12,11 +12,11 @@ function Home() {
     <Header />
     <PrincipalDiv id='home-page'>
       <LeftDiv>
-        <Profile src={profile} alt='Jovem pardo, sorrido fazendo o sinal do ronaldinho'/>
+        <Profile src={profile} alt='Jovem pardo'/>
       </LeftDiv>
       <RightDiv>
           <Name>
-          <TypeString text='Pedro Ryan'/>
+            <TypeString text='Pedro Ryan'/>
           </Name>
           <Title>
               <h2>Desenvolverdor Web!</h2> 

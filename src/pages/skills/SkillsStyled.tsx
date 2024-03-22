@@ -9,6 +9,7 @@ export const PrincipalDiv = styled.div`
     background-color: ${pretoClaro};
     flex-direction: column;
     width: 100%;
+    height: 51.5rem;
   }
 
   @media ${device.tablet} {
@@ -60,17 +61,96 @@ export const PrincipalDiv = styled.div`
   }
 `
 
-export const Btn = styled.div`
-    @media ${device.mobileS || device.mobileM || device.mobileL} {}
+export const Icon = styled.div`
+    @media ${device.mobileS || device.mobileM || device.mobileL} {
+      cursor: pointer;
+	    height: 1rem;
+	    width: 1rem;
+	    font-family: 'Titillium Web', sans-serif;
+	    color: ${preto};
+	    border-radius: 10px;
+	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	    background: ${branco};
+	    margin: 1rem;
+	    transition: 1s;
+        display: flex;
+	    justify-content: center;
+	    align-items: center;
+        span {
+            width: 0px;
+            overflow: hidden;
+            transition: 1s;
+            text-align: center;}
+        &:hover {
+	        width: 13rem;
+	        border-radius: 5px;}
+        &:hover span {
+	        padding: 2px;
+	        width: max-content;
+            font-size: 1.5rem;
+            color: ${preto}}
+    }
 
-    @media ${device.tablet} {}
+    @media ${device.tablet} {
+      cursor: pointer;
+	    height: 10rem;
+	    width: 10rem;
+	    font-family: 'Titillium Web', sans-serif;
+	    color: ${preto};
+	    border-radius: 10px;
+	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	    background: ${branco};
+	    margin: 1rem;
+	    transition: 1s;
+        display: flex;
+	    justify-content: center;
+	    align-items: center;
+        span {
+            width: 0px;
+            overflow: hidden;
+            transition: 1s;
+            text-align: center;}
+        &:hover {
+	        width: 13rem;
+	        border-radius: 5px;}
+        &:hover span {
+	        padding: 2px;
+	        width: max-content;
+            font-size: 1.5rem;
+            color: ${preto}}
+    }
 
-    @media ${device.laptop || device.laptopL} {}
+    @media ${device.laptop || device.laptopL} {      cursor: pointer;
+	    height: 10rem;
+	    width: 10rem;
+	    font-family: 'Titillium Web', sans-serif;
+	    color: ${preto};
+	    border-radius: 10px;
+	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	    background: ${branco};
+	    margin: 1rem;
+	    transition: 1s;
+        display: flex;
+	    justify-content: center;
+	    align-items: center;
+        span {
+            width: 0px;
+            overflow: hidden;
+            transition: 1s;
+            text-align: center;}
+        &:hover {
+	        width: 13rem;
+	        border-radius: 5px;}
+        &:hover span {
+	        padding: 2px;
+	        width: max-content;
+            font-size: 1.5rem;
+            color: ${preto}}}
   
     @media ${device.desktop || device.desktopL} {
-        cursor: pointer;
-	    height: 100px;
-	    width: 100px;
+      cursor: pointer;
+	    height: 10rem;
+	    width: 10rem;
 	    font-family: 'Titillium Web', sans-serif;
 	    color: ${preto};
 	    border-radius: 10px;
@@ -99,35 +179,65 @@ export const Btn = styled.div`
 `
 
 export const Div = styled.div`
-    @media ${device.mobileS || device.mobileM || device.mobileL} {}
+    @media ${device.mobileS || device.mobileM || device.mobileL} {
+      display: grid;
+      grid: repeat(4, 2rem) / auto-flow 10rem;
+      width: 90%;
+      height: 40rem;
+      border-radius: 5rem;
+      background-color: ${preto};
+      justify-content: center;
+      justify-items: center;
+      gap: 1em;
+    }
 
-    @media ${device.tablet} {}
+    @media ${device.tablet} {
+      display: flex;
+      margin: auto;
+      width: 90%;
+      margin-top: 0px;
+      height: 40rem;
+      border-radius: 5rem;
+      background-color: ${preto};
+      align-items: center;
+      justify-content: center;
+    }
 
-    @media ${device.laptop || device.laptopL} {}
+    @media ${device.laptop || device.laptopL} {
+      display: flex;
+      width: 90%;
+      margin-top: 0px;
+      height: 40rem;
+      border-radius: 5rem;
+      background-color: ${preto};
+      align-items: center;
+      justify-content: center;
+    }
 
     @media ${device.desktop || device.desktopL} {
-        display: flex;
-        margin: auto;
-        margin-top: 0rem;
+        display: grid;
+        grid: repeat(4, 10rem) / auto-flow 30rem;
         width: 80%;
         height: 50rem;
         border-radius: 5rem;
         background-color: ${preto};
-        align-items: center;
-        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        gap: 1em;
     }`
 
 export const Title = styled.h2`
   @media ${device.mobileS || device.mobileM || device.mobileL} {
     font-family: 'Rajdhani', sans-serif;
-    width: 19rem;
+    width: 10rem;
     background-color: ${rosa};
     color: ${branco};
-    border-radius: 20px 20px 20px 20px;
-    margin: 0px;
-    margin-left: 0px;
-    font-size: 1rem;
+    border-radius: 20px 20px 0px 0px;
+    margin: auto;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
     text-align: center;
+    justify-content: center;
   }
 
   @media ${device.tablet} {
@@ -135,7 +245,7 @@ export const Title = styled.h2`
     width: 22rem;
     background-color: ${rosa};
     color: ${branco};
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 0px 0px;
     margin: 0px;
     margin-left: 0px;
     font-size: 1rem;
@@ -147,7 +257,7 @@ export const Title = styled.h2`
     width: 100%;
     background-color: ${rosa};
     color: ${branco};
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 0px 0px;
     margin: 0px;
     margin-left: 0px;
     font-size: 1.5rem;
@@ -161,7 +271,7 @@ export const Title = styled.h2`
     height: 5rem;
     background-color: ${rosa};
     color: ${branco};
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 0px 0px;
     margin: 0px;
     margin-left: 0px;
     font-size: 3rem;

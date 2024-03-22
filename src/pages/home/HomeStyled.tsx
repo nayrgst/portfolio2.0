@@ -103,7 +103,7 @@ export const PrincipalDiv = styled.div`
 `
 
 export const Profile = styled.img`
-  
+  object-fit: cover;
   @media ${device.mobileS || device.mobileM || device.mobileL} {
     border-radius: 5px 80px 80px;
     background-color: ${laranja};
